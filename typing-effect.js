@@ -1,5 +1,5 @@
 const element = document.getElementById('typing-effect');
-const text = 'Hi, I am Thirumurugan - A ROBOTICS ENGINEER                                                        '; // The text to be typed out
+const text = 'Hi, I am Thirumurugan - A ROBOTICS ENGINEER                                             '; // The text to be typed out
 let index = 0;
 let typingSpeed = 150; // Typing speed in milliseconds
 let deleteSpeed = 75; // Speed of "deleting" the text
