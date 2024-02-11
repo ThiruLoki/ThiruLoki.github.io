@@ -1,0 +1,280 @@
+#typing-effect {
+    font-family: 'Courier New', monospace;
+    font-size: 24px;
+    color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+.dark-mode h1 {
+    color: #ddd;
+}
+.toggle-dark-mode {
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 1.2rem;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+section {
+    margin-bottom: 40px;
+}
+h2 {
+    border-bottom: 2px solid #333;
+    color: #333;
+    padding-bottom: 5px;
+}
+.dark-mode h2 {
+    border-color: #ddd;
+    color: #ddd;
+}
+p, li {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #ddd;
+}
+a {
+    color: #4CAF50;
+}
+.dark-mode a {
+    color: #7CFC00;
+}
+
+#page-title {
+    color: #4CAF50; /* Example color: green */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* This will allow items to wrap into a new row on smaller screens */
+}
+
+.flex-item {
+    flex: 1; /* Each flex item takes equal width */
+    min-width: 250px; /* Minimum width for each flex item to ensure content does not get too squished */
+    padding: 10px;
+}
+
+/* Additional styles for your elements */
+
+
+#education {
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.education-entry {
+    margin-bottom: 15px;
+}
+
+.degree {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.institution {
+    font-size: 16px;
+    color: #050505;
+}
+.degree {
+    font-size: 18px;
+    font-weight: 500;
+    color: #008000; /* This is the hexadecimal code for green */
+}
+
+/* languages */
+
+
+.languages-section {
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #4A4A4A;
+}
+
+.language-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.language-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.language-proficiency {
+    font-size: 16px;
+    color: #787878;
+}
+
+/* Hobbies */
+
+.hobbies-section {
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #4A4A4A;
+}
+
+.hobby-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hobby-item {
+    font-size: 18px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.hobby-item::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #4CAF50; /* Accent color for bullet points */
+}
+
+/* skills */
+
+.skills-section {
+    margin-top: 20px;
+    opacity: 0; /* Initial state is not visible */
+    transition: opacity 1s ease-out;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.skill-item {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin: 0 10px;
+    background-color: #7df1a4;
+    color: #333;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: scale(1.1); /* Slightly enlarges the skill item on hover */
+}
+
+
+/* footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #3c3d3a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+    transform: translateY(calc(100% - 40px)); /* Show only a small part initially */
+}
+
+footer:hover {
+    transform: translateY(0); /* Expand on hover */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease;
+}
+
+footer:hover .footer-img {
+    transform: scale(1.1); /* Enlarge image slightly on hover */
+}
+
+/* robo */
+
+.robot-container {
+    position: fixed;
+    bottom: -100%; /* Start off-screen */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 0.5s ease-in-out;
+}
+
+.robot-img {
+    width: 100px; /* Adjust as needed */
+    display: block;
+}
+
+/* When the container has the 'active' class, move it into view */
+.robot-container.active {
+    bottom: 20px; /* Adjust as needed */
+}
+
+
+
