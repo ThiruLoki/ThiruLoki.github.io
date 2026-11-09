@@ -1,18 +1,16 @@
-# Thiru_Resume
-# My Resume Website
+# thiruloki.github.io
 
-Welcome to the repository for my personal resume website hosted on GitHub Pages.
+Personal site for Thirumurugan C, robotics engineer.
 
-## About the Website
-This website showcases my skills, experience, and projects as a Robotics Engineer.
+Currently serving a holding page while a new portfolio is built. The
+hero is a planar three-link arm replaying a joint-space trajectory,
+drawn in SVG; the angles in the footer are the live commanded values.
 
-## Features
-- Interactive "About Me" section
-- Portfolio of projects
-- Contact form
+- `index.html` / `wip.css` / `wip.js` — the holding page
+- `resume.html` / `styles.css` / `typing-effect.js` — the previous (2024) resume page, kept for reference
 
-## How to Reach Me
-- Email: thiru.iaf007@gmail.com
-- LinkedIn: www.linkedin.com/in/thirumurugan-c-860984a3
+No build step, no dependencies. Open `index.html`, or serve the folder:
 
-Feel free to explore the website and get in touch!
+    python3 -m http.server 8000
+
+Fonts are IBM Plex Sans Condensed and IBM Plex Mono, loaded from Google Fonts.
